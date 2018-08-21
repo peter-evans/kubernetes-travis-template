@@ -9,3 +9,7 @@ This is a template project for developing and testing services that run in Kuber
 
 - https://kubernetes.io/docs/tasks/tools/install-kubectl/
 - https://kubernetes.io/docs/tasks/tools/install-minikube/
+
+## License
+
+MIT License - see the [LICENSE](LICENSE) file for details
