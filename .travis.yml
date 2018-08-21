@@ -1,0 +1,15 @@
+sudo: true
+
+dist: xenial
+
+env:
+  global:
+    - KUBECTL_VERSION=1.10.6
+    - KUBERNETES_VERSION=1.10.6
+    - MINIKUBE_VERSION=0.28.2
+
+install:
+  - source .ci/install_minikube.sh
+
+script:
+  - kubectl cluster-info
