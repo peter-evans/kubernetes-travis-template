@@ -27,7 +27,8 @@ minikube update-context
 # Wait for Kubernetes to be ready
 echo "Waiting for Kubernetes to be ready ..."
 for i in {1..150}; do # Timeout after 5 minutes
-  if kubectl get pods --namespace=kube-system -lk8s-app=kube-dns|grep Running ; then
+  if kubectl get pods --namespace=kube-system -lcomponent=kube-addon-manager|grep Running && \
+     kubectl get pods --namespace=kube-system -lk8s-app=kube-dns|grep Running ; then
     break
   fi
   sleep 2
