@@ -1,4 +1,5 @@
 # kubernetes-travis-template
+[![Build Status](https://travis-ci.org/peter-evans/kubernetes-travis-template.svg?branch=master)](https://travis-ci.org/peter-evans/kubernetes-travis-template)
 
 This is a template project for developing and testing services that run in Kubernetes. It uses [Travis CI](https://travis-ci.org) to build and test.
 
